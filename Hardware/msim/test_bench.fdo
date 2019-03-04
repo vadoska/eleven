@@ -1,0 +1,10 @@
+vlib work
+
+vlog +acc D:/Projects/eleven/Hardware/src/memory.v
+vlog +acc D:/Projects/eleven/Hardware/src//test_bench.v
+
+vlog +acc D:/Projects/glbl.v
+
+vsim -t 1ns -lib work test_bench glbl
+
+#vsim -t 1ns -L simprims_ver -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L altera_mf_ver -lib work test_bench glbl

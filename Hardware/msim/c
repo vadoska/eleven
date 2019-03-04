@@ -1,0 +1,5 @@
+do ./test_bench.fdo
+do ./test_bench.udo
+
+run 110 us
+#run -all
